@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" rowHeight="200" id="f7p-hP-ak4" customClass="searchResultCell" customModule="Movister" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f7p-hP-ak4" id="BU2-JB-L4A">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notfound" translatesAutoresizingMaskIntoConstraints="NO" id="9Zg-WX-jSA" customClass="CircleImage" customModule="Movister" customModuleProvider="target">
+                        <rect key="frame" x="16" y="11" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="FOM-Xm-gvS"/>
+                            <constraint firstAttribute="height" constant="90" id="I2G-oh-OHI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some long movie title that requires you to break multiple lines " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d22-0u-TtL">
+                        <rect key="frame" x="114" y="11" width="190" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="190" id="EdX-LZ-cpx"/>
+                            <constraint firstAttribute="height" constant="33" id="tNj-hw-7Lm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-12-20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dKO-0k-yMO">
+                        <rect key="frame" x="114" y="52" width="93" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="93" id="RbO-vT-kjI"/>
+                            <constraint firstAttribute="height" constant="21" id="ecQ-oB-qyW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="385-5J-nUJ">
+                        <rect key="frame" x="114" y="81" width="190" height="108"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="190" id="8km-fw-SPT"/>
+                            <constraint firstAttribute="height" constant="108" id="Fgo-3H-kJv"/>
+                        </constraints>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adult" translatesAutoresizingMaskIntoConstraints="NO" id="t06-Mh-02T" customClass="CircleImage" customModule="Movister" customModuleProvider="target">
+                        <rect key="frame" x="41" y="109" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="jJa-ar-9xZ"/>
+                            <constraint firstAttribute="width" constant="40" id="ltS-qH-laH"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9Zg-WX-jSA" firstAttribute="top" secondItem="BU2-JB-L4A" secondAttribute="topMargin" id="6fH-cX-Jb3"/>
+                    <constraint firstItem="t06-Mh-02T" firstAttribute="top" secondItem="9Zg-WX-jSA" secondAttribute="bottom" constant="8" id="A80-2e-LFc"/>
+                    <constraint firstItem="d22-0u-TtL" firstAttribute="top" secondItem="BU2-JB-L4A" secondAttribute="topMargin" id="JO8-Sd-3B1"/>
+                    <constraint firstItem="385-5J-nUJ" firstAttribute="top" secondItem="dKO-0k-yMO" secondAttribute="bottom" constant="8" id="MS4-xH-fab"/>
+                    <constraint firstItem="t06-Mh-02T" firstAttribute="centerX" secondItem="9Zg-WX-jSA" secondAttribute="centerX" id="N9k-Ui-hCB"/>
+                    <constraint firstItem="dKO-0k-yMO" firstAttribute="top" secondItem="d22-0u-TtL" secondAttribute="bottom" constant="8" id="ZFW-GY-GPC"/>
+                    <constraint firstItem="385-5J-nUJ" firstAttribute="leading" secondItem="9Zg-WX-jSA" secondAttribute="trailing" constant="8" id="bBI-2h-4Ag"/>
+                    <constraint firstItem="d22-0u-TtL" firstAttribute="leading" secondItem="9Zg-WX-jSA" secondAttribute="trailing" constant="8" id="dOl-u7-81s"/>
+                    <constraint firstItem="dKO-0k-yMO" firstAttribute="centerX" secondItem="BU2-JB-L4A" secondAttribute="centerX" id="dnF-bq-sYX"/>
+                    <constraint firstItem="385-5J-nUJ" firstAttribute="trailing" secondItem="BU2-JB-L4A" secondAttribute="trailingMargin" id="e8E-c5-CAc"/>
+                    <constraint firstItem="dKO-0k-yMO" firstAttribute="leading" secondItem="9Zg-WX-jSA" secondAttribute="trailing" constant="8" id="jrf-EL-daU"/>
+                    <constraint firstItem="d22-0u-TtL" firstAttribute="trailing" secondItem="BU2-JB-L4A" secondAttribute="trailingMargin" id="n60-nW-tR8"/>
+                    <constraint firstItem="9Zg-WX-jSA" firstAttribute="leading" secondItem="BU2-JB-L4A" secondAttribute="leadingMargin" id="ny3-b4-1yr"/>
+                    <constraint firstItem="385-5J-nUJ" firstAttribute="bottom" secondItem="BU2-JB-L4A" secondAttribute="bottomMargin" id="s4Y-TA-B0k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="adultContentImageView" destination="t06-Mh-02T" id="cOP-MF-Spu"/>
+                <outlet property="dateLabel" destination="dKO-0k-yMO" id="mcQ-E7-0dc"/>
+                <outlet property="movieImage" destination="9Zg-WX-jSA" id="5oe-67-zJG"/>
+                <outlet property="nameLabel" destination="d22-0u-TtL" id="PgK-MU-cmI"/>
+                <outlet property="overviewTextView" destination="385-5J-nUJ" id="n29-DC-WXi"/>
+            </connections>
+            <point key="canvasLocation" x="-118" y="44"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="adult" width="512" height="512"/>
+        <image name="notfound" width="381" height="381"/>
+    </resources>
+</document>

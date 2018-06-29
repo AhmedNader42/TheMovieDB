@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="repliesCell" rowHeight="100" id="V0c-UX-QK7" customClass="repliesCell" customModule="Movister" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V0c-UX-QK7" id="wKx-KA-PPH">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="dEb-r0-a5A" customClass="CircleImage" customModule="Movister" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="11" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="DY9-QB-st1"/>
+                            <constraint firstAttribute="width" constant="40" id="k73-Hq-W36"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmed Nader" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="25" translatesAutoresizingMaskIntoConstraints="NO" id="L0g-UV-tZH">
+                        <rect key="frame" x="48" y="11" width="311" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="0OW-FE-Kv1"/>
+                            <constraint firstAttribute="width" constant="311" id="EZ8-T1-Z7P"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJV-OG-9bi">
+                        <rect key="frame" x="48" y="39" width="311" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EuK-8d-BFH">
+                        <rect key="frame" x="48" y="39" width="3" height="50"/>
+                        <color key="backgroundColor" red="0.85875731706619263" green="0.85886079072952271" blue="0.85872220993041992" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="3" id="908-qf-tUh"/>
+                            <constraint firstAttribute="height" constant="50" id="lSN-hy-jDd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EuK-8d-BFH" firstAttribute="leading" secondItem="dEb-r0-a5A" secondAttribute="trailing" constant="8" id="0W0-eF-6KJ"/>
+                    <constraint firstItem="L0g-UV-tZH" firstAttribute="leading" secondItem="dEb-r0-a5A" secondAttribute="trailing" constant="8" id="9OC-he-XPa"/>
+                    <constraint firstItem="L0g-UV-tZH" firstAttribute="trailing" secondItem="wKx-KA-PPH" secondAttribute="trailingMargin" id="Bkm-km-NlL"/>
+                    <constraint firstItem="cJV-OG-9bi" firstAttribute="top" secondItem="L0g-UV-tZH" secondAttribute="bottom" constant="3" id="LKg-9n-DX6"/>
+                    <constraint firstItem="cJV-OG-9bi" firstAttribute="trailing" secondItem="wKx-KA-PPH" secondAttribute="trailingMargin" id="MUR-OL-25E"/>
+                    <constraint firstItem="L0g-UV-tZH" firstAttribute="top" secondItem="wKx-KA-PPH" secondAttribute="topMargin" id="Taa-0n-KJA"/>
+                    <constraint firstItem="dEb-r0-a5A" firstAttribute="top" secondItem="wKx-KA-PPH" secondAttribute="topMargin" id="hgk-NM-Fc4"/>
+                    <constraint firstItem="cJV-OG-9bi" firstAttribute="leading" secondItem="dEb-r0-a5A" secondAttribute="trailing" constant="8" id="kvj-c3-G2U"/>
+                    <constraint firstItem="cJV-OG-9bi" firstAttribute="bottom" secondItem="wKx-KA-PPH" secondAttribute="bottomMargin" id="mnS-BU-lYs"/>
+                    <constraint firstItem="dEb-r0-a5A" firstAttribute="leading" secondItem="wKx-KA-PPH" secondAttribute="leadingMargin" constant="-16" id="uvl-ms-opL"/>
+                    <constraint firstItem="EuK-8d-BFH" firstAttribute="bottom" secondItem="wKx-KA-PPH" secondAttribute="bottomMargin" id="zja-HR-nMz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bodyTextView" destination="cJV-OG-9bi" id="bg1-y2-gkL"/>
+                <outlet property="nameLabel" destination="L0g-UV-tZH" id="uKL-dC-cZR"/>
+                <outlet property="profileImageView" destination="dEb-r0-a5A" id="31W-9q-rYf"/>
+            </connections>
+            <point key="canvasLocation" x="133.5" y="3"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile" width="1024" height="1024"/>
+    </resources>
+</document>

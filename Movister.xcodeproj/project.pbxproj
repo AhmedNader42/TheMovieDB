@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6294CF959ECA10E1DB803F81 /* Pods_Movister.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB07D69A8323343C7E10652 /* Pods_Movister.framework */; };
+		849AFB5A20E67BA90071EA92 /* RepliesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849AFB5920E67BA90071EA92 /* RepliesCell.xib */; };
+		849AFB5C20E67BC00071EA92 /* repliesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849AFB5B20E67BC00071EA92 /* repliesCell.swift */; };
 		84D4501D20E21C950087FA8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4501C20E21C950087FA8A /* AppDelegate.swift */; };
 		84D4501F20E21C950087FA8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4501E20E21C950087FA8A /* ViewController.swift */; };
 		84D4502220E21C950087FA8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D4502020E21C950087FA8A /* Main.storyboard */; };
 		84D4502420E21C9D0087FA8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D4502320E21C9D0087FA8A /* Assets.xcassets */; };
 		84D4502720E21C9D0087FA8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D4502520E21C9D0087FA8A /* LaunchScreen.storyboard */; };
+		84D4502F20E220DB0087FA8A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4502E20E220DB0087FA8A /* Constants.swift */; };
+		84D4503420E2216B0087FA8A /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4503320E2216B0087FA8A /* Requests.swift */; };
+		84D4503720E236540087FA8A /* searchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D4503620E236540087FA8A /* searchCell.xib */; };
+		84D4503920E238E40087FA8A /* searchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4503820E238E40087FA8A /* searchResultCell.swift */; };
+		84D4503C20E24AB80087FA8A /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D4503A20E24AB80087FA8A /* LoadingCell.xib */; };
+		84D4503D20E24AB80087FA8A /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D4503B20E24AB80087FA8A /* NothingFoundCell.xib */; };
+		84D4503F20E2621D0087FA8A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4503E20E2621D0087FA8A /* DetailsViewController.swift */; };
+		84D4504120E2642D0087FA8A /* DetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D4504020E2642D0087FA8A /* DetailsCell.xib */; };
+		84D4504320E264AD0087FA8A /* detailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D4504220E264AD0087FA8A /* detailsCell.swift */; };
+		84EC800E20E66311007FACC3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC800D20E66311007FACC3 /* Comment.swift */; };
+		84FAC5D720E581B0003D230A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAC5D620E581B0003D230A /* Extensions.swift */; };
+		84FAC5DA20E5848B003D230A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAC5D920E5848B003D230A /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		711D1426435E2FB5D9919265 /* Pods-Movister.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movister.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Movister/Pods-Movister.debug.xcconfig"; sourceTree = "<group>"; };
+		849AFB5920E67BA90071EA92 /* RepliesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepliesCell.xib; sourceTree = "<group>"; };
+		849AFB5B20E67BC00071EA92 /* repliesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repliesCell.swift; sourceTree = "<group>"; };
 		84D4501920E21C950087FA8A /* Movister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D4501C20E21C950087FA8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84D4501E20E21C950087FA8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +40,20 @@
 		84D4502320E21C9D0087FA8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84D4502620E21C9D0087FA8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84D4502820E21C9D0087FA8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D4502E20E220DB0087FA8A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		84D4503320E2216B0087FA8A /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		84D4503620E236540087FA8A /* searchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = searchCell.xib; sourceTree = "<group>"; };
+		84D4503820E238E40087FA8A /* searchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchResultCell.swift; sourceTree = "<group>"; };
+		84D4503A20E24AB80087FA8A /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		84D4503B20E24AB80087FA8A /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
+		84D4503E20E2621D0087FA8A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		84D4504020E2642D0087FA8A /* DetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCell.xib; sourceTree = "<group>"; };
+		84D4504220E264AD0087FA8A /* detailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsCell.swift; sourceTree = "<group>"; };
+		84EC800D20E66311007FACC3 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		84FAC5D620E581B0003D230A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		84FAC5D920E5848B003D230A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		C4E268F8997DB581E8F3B733 /* Pods-Movister.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movister.release.xcconfig"; path = "Pods/Target Support Files/Pods-Movister/Pods-Movister.release.xcconfig"; sourceTree = "<group>"; };
+		CBB07D69A8323343C7E10652 /* Pods_Movister.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movister.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +61,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6294CF959ECA10E1DB803F81 /* Pods_Movister.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		617DD0BADC0C9F22D64150D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBB07D69A8323343C7E10652 /* Pods_Movister.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84D4501020E21C950087FA8A = {
 			isa = PBXGroup;
 			children = (
 				84D4501B20E21C950087FA8A /* Movister */,
 				84D4501A20E21C950087FA8A /* Products */,
+				F925FA997EAAF03699DDF268 /* Pods */,
+				617DD0BADC0C9F22D64150D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +98,76 @@
 			isa = PBXGroup;
 			children = (
 				84D4501C20E21C950087FA8A /* AppDelegate.swift */,
-				84D4501E20E21C950087FA8A /* ViewController.swift */,
+				84D4502E20E220DB0087FA8A /* Constants.swift */,
+				84FAC5D620E581B0003D230A /* Extensions.swift */,
 				84D4502020E21C950087FA8A /* Main.storyboard */,
+				84D4503520E236270087FA8A /* XIBs */,
+				84D4503220E221120087FA8A /* Requests */,
+				84D4503020E220E90087FA8A /* Controllers */,
+				84FAC5D820E5847D003D230A /* Model */,
+				84D4503120E220F80087FA8A /* Supporting Files */,
+			);
+			path = Movister;
+			sourceTree = "<group>";
+		};
+		84D4503020E220E90087FA8A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84D4501E20E21C950087FA8A /* ViewController.swift */,
+				84D4503E20E2621D0087FA8A /* DetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84D4503120E220F80087FA8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				84D4502320E21C9D0087FA8A /* Assets.xcassets */,
 				84D4502520E21C9D0087FA8A /* LaunchScreen.storyboard */,
 				84D4502820E21C9D0087FA8A /* Info.plist */,
 			);
-			path = Movister;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84D4503220E221120087FA8A /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				84D4503320E2216B0087FA8A /* Requests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		84D4503520E236270087FA8A /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				84D4503620E236540087FA8A /* searchCell.xib */,
+				84D4503820E238E40087FA8A /* searchResultCell.swift */,
+				84D4503A20E24AB80087FA8A /* LoadingCell.xib */,
+				84D4503B20E24AB80087FA8A /* NothingFoundCell.xib */,
+				84D4504220E264AD0087FA8A /* detailsCell.swift */,
+				84D4504020E2642D0087FA8A /* DetailsCell.xib */,
+				849AFB5B20E67BC00071EA92 /* repliesCell.swift */,
+				849AFB5920E67BA90071EA92 /* RepliesCell.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		84FAC5D820E5847D003D230A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84FAC5D920E5848B003D230A /* Movie.swift */,
+				84EC800D20E66311007FACC3 /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F925FA997EAAF03699DDF268 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				711D1426435E2FB5D9919265 /* Pods-Movister.debug.xcconfig */,
+				C4E268F8997DB581E8F3B733 /* Pods-Movister.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D4502B20E21C9D0087FA8A /* Build configuration list for PBXNativeTarget "Movister" */;
 			buildPhases = (
+				B46CB010360F1AB0B0A7CDC9 /* [CP] Check Pods Manifest.lock */,
 				84D4501520E21C950087FA8A /* Sources */,
 				84D4501620E21C950087FA8A /* Frameworks */,
 				84D4501720E21C950087FA8A /* Resources */,
+				1EBE6FB66B963AE69D6C78C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +231,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D4502720E21C9D0087FA8A /* LaunchScreen.storyboard in Resources */,
+				84D4503720E236540087FA8A /* searchCell.xib in Resources */,
+				84D4503D20E24AB80087FA8A /* NothingFoundCell.xib in Resources */,
 				84D4502420E21C9D0087FA8A /* Assets.xcassets in Resources */,
+				849AFB5A20E67BA90071EA92 /* RepliesCell.xib in Resources */,
+				84D4503C20E24AB80087FA8A /* LoadingCell.xib in Resources */,
+				84D4504120E2642D0087FA8A /* DetailsCell.xib in Resources */,
 				84D4502220E21C950087FA8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EBE6FB66B963AE69D6C78C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Movister/Pods-Movister-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Movister/Pods-Movister-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B46CB010360F1AB0B0A7CDC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Movister-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84D4501520E21C950087FA8A /* Sources */ = {
@@ -136,7 +292,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D4501F20E21C950087FA8A /* ViewController.swift in Sources */,
+				84D4503420E2216B0087FA8A /* Requests.swift in Sources */,
+				849AFB5C20E67BC00071EA92 /* repliesCell.swift in Sources */,
+				84FAC5DA20E5848B003D230A /* Movie.swift in Sources */,
+				84D4504320E264AD0087FA8A /* detailsCell.swift in Sources */,
+				84FAC5D720E581B0003D230A /* Extensions.swift in Sources */,
+				84EC800E20E66311007FACC3 /* Comment.swift in Sources */,
 				84D4501D20E21C950087FA8A /* AppDelegate.swift in Sources */,
+				84D4503920E238E40087FA8A /* searchResultCell.swift in Sources */,
+				84D4502F20E220DB0087FA8A /* Constants.swift in Sources */,
+				84D4503F20E2621D0087FA8A /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +443,12 @@
 		};
 		84D4502C20E21C9D0087FA8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 711D1426435E2FB5D9919265 /* Pods-Movister.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3TVP64ZUPA;
-				INFOPLIST_FILE = Movister/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Movister/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +462,12 @@
 		};
 		84D4502D20E21C9D0087FA8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4E268F8997DB581E8F3B733 /* Pods-Movister.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3TVP64ZUPA;
-				INFOPLIST_FILE = Movister/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Movister/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
