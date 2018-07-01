@@ -29,8 +29,8 @@ class DetailsViewController: UIViewController {
     let price = "1500$"
     
     var currentMovie = Movie()
+    var image: UIImage = #imageLiteral(resourceName: "notfound")
     var mainComments = [Comment]()
-    var downloadTask: URLSessionDownloadTask?
     
     
     // MARK: - Life Cycle
@@ -51,16 +51,13 @@ class DetailsViewController: UIViewController {
         movieRatingView.settings.totalStars = 10
         movieRatingView.settings.fillMode = .precise
         
+        
         // Display the movie details and start fetching the comments
-        setupMovie()
         fetchComments()
+        setupMovie()
+        tableView.reloadData()
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(true)
-        downloadTask?.cancel()
-        downloadTask = nil
-    }
+
     
     
     // MARK: - Setup
@@ -71,10 +68,9 @@ class DetailsViewController: UIViewController {
         let monthNumber = currentMovie.releaseDate.components(separatedBy: "-")[1]
         let dateFormatter = DateFormatter()
         monthLabel.text = dateFormatter.monthSymbols[Int(monthNumber)! - 1]
-        
-        downloadTask = mainImage.loadImage(url: URL(string: "\(BASE_IMAGE_URL)\(currentMovie.posterURL)")!)
+        mainImage.image = image
+//        downloadTask = mainImage.loadImage(url: URL(string: "\(BASE_IMAGE_URL)\(currentMovie.posterURL)")!)
         movieRatingView.rating = currentMovie.rating
-        tableView.reloadData()
     }
     
     func fetchComments() {
@@ -83,7 +79,9 @@ class DetailsViewController: UIViewController {
             
             guard let safeComments = comments else { return }
             self.mainComments = safeComments
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
     }
     

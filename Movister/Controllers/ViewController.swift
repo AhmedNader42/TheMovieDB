@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     // MARK: - Variables
     var results = [Movie]()
     var selectedMovie = Movie()
+    var selectedMovieImage = #imageLiteral(resourceName: "notfound")
     var isDownloading = false
     var searched = false
 
@@ -52,6 +53,7 @@ class ViewController: UIViewController {
         if segue.identifier == SEARCH_TO_DETAILS {
             guard let destination = segue.destination as? DetailsViewController else { return }
             destination.currentMovie = self.selectedMovie
+            destination.image = self.selectedMovieImage
         }
     }
     
@@ -103,6 +105,9 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Add the selected movie to send to the next view
         self.selectedMovie = results[indexPath.row]
+        let cell = tableView.cellForRow(at: indexPath) as! searchResultCell
+        selectedMovieImage = cell.movieImage.image!
+        
         // Deselcet row so it doesn't stay stuck
         tableView.deselectRow(at: indexPath, animated: true)
         // Go to the details view
